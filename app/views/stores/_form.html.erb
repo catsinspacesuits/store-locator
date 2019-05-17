@@ -4,7 +4,7 @@
     <span>Add current location</span>
     <button type="button" class="btn btn-default add-button">
       <span class="glyphicon glyphicon-plus"></span> 
-    </button><button type="button" class="btn btn-primary clear-button">clear</button><br>
+    </button><button onclick="document.getElementById('coordinatesStore').value = ''" type="button" class="btn btn-primary clear-button">clear</button><br>
   <%= f.button :submit, "Save Spaeti", class: "save-button" %>
 
 <% end %>
