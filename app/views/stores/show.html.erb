@@ -1,0 +1,15 @@
+<main>
+  <h2><%= @store.name %></h2>
+</main>
+
+<%= map(:center => {
+    :latlng => [ @store.location ],
+    :zoom => 17
+  },
+  :markers => [
+      {  
+         :latlng => [ @store.location ],
+         :popup => @store.name + ", " + @store.location
+      }
+    ]
+  ) %>
